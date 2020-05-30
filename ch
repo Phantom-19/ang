@@ -70,29 +70,29 @@ a=a[::-1]
 n=n[::-1]
 for i in range(len(n)-1,0,-1):
   if i%3==2 and n[i]!="0":
-    print("%s hundred"%a[i],end=" ")
+    Street("%s hundred"%a[i],end=" ")
   if i%3==1:
     if n[i]=="1":
       if n[i-1]=="0":
-        print("ten",end='')
+        Street("ten",end='')
       elif n[i-1]=="1":
-        print("eleven",end='')
+        Street("eleven",end='')
       elif n[i-1]=="2":
-        print("twelve",end='')
+        Street("twelve",end='')
       elif n[i-1]=="3":
-        print("thirteen",end='')
+        Street("thirteen",end='')
       elif n[i-1]=="4":
-        print("fourteen",end='')
+        Street("fourteen",end='')
       elif n[i-1]=="5":
-        print("fifteen",end='')
+        Street("fifteen",end='')
       elif n[i-1]=="6":
-        print("sixteen",end='')
+        Street("sixteen",end='')
       elif n[i-1]=="7":
-        print("seventeen",end='')
+        Street("seventeen",end='')
       elif n[i-1]=="8":
-        print("eighteen",end='')
+        Street("eighteen",end='')
       elif n[i-1]=="9":
-        print("nineteen",end='')
+        Street("nineteen",end='')
     else:
       if n[i]=="2":
         print("twenty",end='')
