@@ -1,0 +1,57 @@
+#!usr/bin/python3.7
+#Auteur: Faxek
+#Contact: t.me/Faxelh
+
+try:
+	from requests import get, post
+	import json, os, subprocess as sp, sys
+
+except Exception as ff:
+
+	exit("[Erreur provenance Module] %s"%(ff))
+
+if sys.version[0] in '2':
+   exit("[Desole] Vous utilisez python2, veuillez installer python3")
+os.system('clear')
+print("""
+  __ ___ ___    _     _        _ 
+ /__  |   |    /  |  / \ |\ | |_ 
+ \_| _|_  |    \_ |_ \_/ | \| |_ 
+                                 """)
+try:
+	u=input("[!] Entrer le nom d\'utilisateur  github: ")
+	if u == '':
+		exit("[?] tu es sain d\'esprit")
+	print()
+	re=get('https://api.github.com/users/'+u+'/repos')
+	a=json.loads(re.text)
+except Exception as ef:
+	exit("[Erreur] %s"%(ef))
+
+items = []
+try:
+	for item in a:
+	    items.append(item['name'])
+except TypeError: exit("[user: utilisateur Introuvable] Le nom d\'utilisateur n\'existe pas ")
+
+s=len(items)
+if s <= 0:
+	exit("[repo: Depot introuvable] Le nom d\'utilisateur n\'a pas de referentiels")
+elif s > 0:
+	print("[!] Depot trouver:",s,"repostory")
+
+c=int(1)
+while c < s:
+	for i in range(s):
+		print("\t["+str(c)+"] Clone",items[i])
+		c+=1
+try:
+	Dmd=int(input("\n[?] Clonage du lien git (ni a cloner) : "))
+	if Dmd <= 0:
+		exit("[?] ")
+	os.system('git clone https://github.com/'+u+'/'+items[Dmd-1])
+	sp.call('mv '+str(items[asu-1])+' ..',shell=True,stdout=sp.DEVNULL, stderr=sp.STDOUT)
+	print("[!] installer avec success ",items[Dmd-1])
+	print("[!] verifie le dossier puis  tape 'cd'")
+except KeyboardInterrupt: exit("[!] key interrupt: exit")
+except Exception as F: exit("[?:  tu es sain d\'esprit] %s"%(F))
