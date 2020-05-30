@@ -26,7 +26,7 @@ def Street(z):
         time.sleep(0.09)
 
 
-os.system('clear')
+
 os.system('clear')
 print "[38;5;214m●▬▬▬▬▬▬▬▬๑\033[1;97m●▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬●●▬▬▬▬▬\033[1;32m▬▬▬▬๑۩۩๑▬▬▬▬▬▬●"             
 print "[38;5;214m•_  _ ____ \033[1;97m _  _ ____ ____ _  _\033[1;32m ____ ____   _  _• "
@@ -70,11 +70,11 @@ a=a[::-1]
 n=n[::-1]
 for i in range(len(n)-1,0,-1):
   if i%3==2 and n[i]!="0":
-    Street("%s hundred"%a[i],end=" ")
+    print("%s hundred"%a[i],end=" ")
   if i%3==1:
     if n[i]=="1":
       if n[i-1]=="0":
-        print("ten",end = "")
+        print("ten",end='')
       elif n[i-1]=="1":
         print("eleven",end='')
       elif n[i-1]=="2":
@@ -120,6 +120,7 @@ for i in range(len(n)-1,0,-1):
     print("billion",end='')
   if i==12 and (n[i]!="0" or n[i+1]!="0" or n[i+2]!="0"):
     print("trillion",end="")
+
 print("")
 Street ("\033[1;91m[\033[1;93m**\033[1;91m] \033[38;5;214mFaxel\033[1;97m un jour, \033[38;5;214mFaxel \033[1;97mtoujours    \033[1;91m[\033[1;93m**\033[1;91m]")
 
