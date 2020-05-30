@@ -74,7 +74,7 @@ for i in range(len(n)-1,0,-1):
   if i%3==1:
     if n[i]=="1":
       if n[i-1]=="0":
-        print "ten",end=' '
+        print("ten",end = "")
       elif n[i-1]=="1":
         print("eleven",end='')
       elif n[i-1]=="2":
