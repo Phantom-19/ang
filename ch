@@ -1,7 +1,7 @@
 #!/usr/bin/python2
 #coding=utf-8
 
-# Le credit pour ce code va a Mr Hacker_K
+# Le credit pour ce code va a Mr Faxel
 # Si vous voulez prendre Le credit pour ce code Voyez Faster Axel.
 
 
@@ -39,7 +39,7 @@ print("\033[1;97m╚════════════════════
 print("")
 Street("""\033[1;91m[\033[1;93m**\033[1;91m]\033[1;92m Programme permettant d\'ecrire des chiffres en lettre en anglais.         \033[1;91m[\033[1;93m**\033[1;91m] """)
 print ("")
-n=input("\033[1;97mEntrer un nombre \033[1;91m(\033[1;95m<=\033[1;94m 15\033[1;91m)\033[1;91m : \033[1;96m")
+n=raw_input("\033[1;97mEntrer un nombre \033[1;91m(\033[1;95m<=\033[1;94m 15\033[1;91m)\033[1;91m : \033[1;96m")
 print("\033[1;92m")
 m=len(n)%3
 if m==1:
