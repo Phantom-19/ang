@@ -71,19 +71,19 @@ items = []
 try:
 	for item in a:
 	    items.append(item['name'])
-except TypeError: exit("\033[1;91m[\033[1;93mx\033[1;91m]\033[1;97m Le nom d\'utilisateur\033[1;91m ",u,"\033[1;97m n\'existe pas ")
+except TypeError: exit("\033[1;91m[\033[1;93mx\033[1;91m]\033[1;97m Le nom d\'utilisateur\033[1;91m '+u+'\033[1;97m n\'existe pas ")
 
 s=len(items)
 if s <= 0:
-	exit("\033[1;91m\033[1;97m[Depot introuvable\033[1;91m]\033[1;97m Le nom d\'utilisateur \033[1;96m",u,"\033[1;97m n\'a pas de referentiels")
+	exit("\033[1;91m\033[1;97m[Depot introuvable\033[1;91m]\033[1;97m Le nom d\'utilisateur \033[1;96m '+u+'\033[1;97m n\'a pas de referentiels")
 elif s > 0:
-	print("\033[1;91m[\033[1;93m*\033[1;91m] \033[1;97mJ\'ai trouver \033[1;91m",s,"\033[1;97m referentiel sur le github de\033[1;96m ",u," )
+	print("\033[1;91m[\033[1;93m*\033[1;91m] \033[1;97mJ\'ai trouver \033[1;91m",s,"\033[1;97m referentiel sur le github de\033[1;96m ")
 
 c=int(1)
 while c < s:
 	for i in range(s):
             
-		print "\t["+str(c)+"] Clone",items[i],
+		print ("\t["+str(c)+"] Clone",items[i])
                 c+=1
 try:
 	Dmd=int(input("\n\033[1;91m[\033[1;93m*\033[1;91m] \033[1;97mClonage du lien git\033[1;91m (\033[1;95mnumero\033[1;91m) :\033[1;96m "))
