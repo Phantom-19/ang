@@ -95,31 +95,31 @@ for i in range(len(n)-1,0,-1):
         Street("nineteen",end='')
     else:
       if n[i]=="2":
-        print("twenty",end='')
+        Street("twenty",end='')
       if n[i]=="3":
-        print("thirty",end='')
+        Street("thirty",end='')
       if n[i]=="4":
-        print("forty",end='')
+        Street("forty",end='')
       if n[i]=="5":
-        print("fifty",end='')
+        Street("fifty",end='')
       if n[i]=="6":
-        print("sixty",end='')
+        Street("sixty",end='')
       if n[i]=="7":
-        print("seventy",end='')
+        Street("seventy",end='')
       if n[i]=="8":
-        print("eighty",end='')
+        Street("eighty",end='')
       if n[i]=="9":
-        print("ninety",end='')
+        Street("ninety",end='')
       if n[i-1]!="0" :
-        print(a[i-1],end="")
+        Street(a[i-1],end="")
   if i==3 and (n[i]!="0" or n[i+1]!="0" or n[i+2]!="0")  :
-    print("thousand",end='')
+    Street("thousand",end='')
   if i==6 and (n[i]!="0" or n[i+1]!="0" or n[i+2]!="0"):
-    print("million",end='')
+    Street("million",end='')
   if i==9 and (n[i]!="0" or n[i+1]!="0" or n[i+2]!="0"):
-    print("billion",end='')
+    Street("billion",end='')
   if i==12 and (n[i]!="0" or n[i+1]!="0" or n[i+2]!="0"):
-    print("trillion",end="")
+    Street("trillion",end="")
 
 print("")
 Street ("\033[1;91m[\033[1;93m**\033[1;91m] \033[38;5;214mFaxel\033[1;97m un jour, \033[38;5;214mFaxel \033[1;97mtoujours    \033[1;91m[\033[1;93m**\033[1;91m]")
