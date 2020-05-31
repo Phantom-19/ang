@@ -29,6 +29,7 @@ def Street(z):
 
 
 try:
+
 	from requests import get, post
 	import json, os, subprocess as sp, sys
 
@@ -37,6 +38,7 @@ except Exception as ff:
 	exit("\033[1;91m[\033[1;97mErreur provenance des Modules\033[1;91m]\033[1;93m %s"%(ff))
 
 if sys.version[0] in '2':
+
    exit("\033[1;91m[\033[1;97mDesole\033[1;91m] \033[1;97mVous ne pouvez pas utiliser\033[1;95m python2\033[1;97m.\nVeuillez installer \033[1;96mpython3")
 
 os.system('clear')
@@ -53,47 +55,69 @@ print("\033[1;97m╚════════════════════
 print("")
 
 try:
+
 	Nom=input("\033[1;91m[\033[1;93m&\033[1;91m] \033[1;97mEntrer le nom d\'utilisateur github \033[1;91m: \033[1;96m")
 	if Nom == '':
-		exit("\033[1;91m[\033[1;93m?\033[1;91m] \033[1;97mA plus man")
+		exit("\033[1;91m[\033[1;93m?\033[1;91m] \033[1;97mA plus man.")
 	print("")
 	re=get('https://api.github.com/users/'+Nom+'/repos')
 	a=json.loads(re.text)
+
 except Exception as ef:
 	exit("\033[1;91m[\033[1;93m!\033[1;91m]\033[1;94m Erreur %s"%(ef))
 
 items = []
 try:
 	for item in a:
+
 	    items.append(item['name'])
-except TypeError: exit("\033[1;91m[\033[1;93mx\033[1;91m]\033[1;97m Le nom d\'utilisateur\033[1;91m ",Nom," \033[1;97m n\'existe pas ")
+
+except TypeError: exit("\033[1;91m[\033[1;93mx\033[1;91m]\033[1;97m Le nom d\'utilisateur\033[1;91m",Nom,"\033[1;97m n\'existe pas.")
 
 s=len(items)
+
 if s <= 0:
-	#exit("\033[1;91m]\033[1;97m  \033[1;96m ",Nom," ")
-        print("\033[1;91m[\033[1;97m Depot introuvable \033[38;5;145m ",Nom," \033[1;97mLe nom d\'utilisateur n\'a pas de referentiel")
+
+	#exit("\033[1;91m \033[1;96m ")
+        print("\033[1;91m[\033[1;97m!\033[1;91m]\033[1;97m Le nom d\'utilisateur\033[38;5;145m",Nom,"\033[1;97m n\'a pas de referentiel.")
         exit()
 
 elif s > 0:
-
-	#print("\033[1;91m[\033[1;93m*\033[1;91m] \033[1;97mJ\'ai trouver \033[1;91m",s," Faxel")
-        #print("\033[1;97mreferentiel sur le github de\033[1;96m",Nom,"\033[1,97m.")
-        print("\033[1;91m[\033[1;93m*\033[1;91m] \033[1;97mJ\'ai trouver \033[1;91m",s," \033[1;97mreferentiel sur le github de\033[1;96m",Nom,"\033[1,97m.")
-
+                   
+        print("\033[1;91m[\033[1;93m*\033[1;91m] \033[1;97mJ\'ai trouver\033[1;91m",s,"\033[1;97mreferentiel sur le github de\033[1;96m",Nom," \033[1;91m[\033[1;93m*\033[1;91m]\n")
+        print("\033[1;96m  __ ___ ___    _     _        _ ")
+        print("\033[1;96m /__  |   |    /  |  / \ |\ | |_ ")
+        print("\033[1;96m \_| _|_  |    \_ |_ \_/ | \| |_ \n")
 
 c=int(1)
 while c < s:
 	for i in range(s):
                 
-                print ("\t\033[1;91m[\033[1;93m"+str(c)+"\033[1;91m]\033[1;97m Clone\033[1;92m",items[i])
+                
+                time.sleep(1.5)
+                
+                print ("\t\033[1;91m[\033[1;93m"+str(c)+"\033[1;91m]\033[1;97m Clone\033[1;92m\n",items[i])
                 c+=1
+
 try:
+
 	Dmd=int(input("\n\033[1;91m[\033[1;93m*\033[1;91m] \033[1;97mClonage du lien git\033[1;91m (\033[1;95mnumero\033[1;91m) :\033[1;96m "))
+
 	if Dmd <= 0:
+
 		exit("\033[1;91m[\033[1;93m?\033[1;91m] \033[1;97mA plus")
+  
 	os.system('git clone https://github.com/'+u+'/'+items[Dmd-1])
+
 	sp.call('mv '+str(items[Dmd-1])+' ..',shell=True,stdout=sp.DEVNULL, stderr=sp.STDOUT)
+
 	print("\n\033[1;91m[\033[1;93m@\033[1;91m]\033[1;92m Installation reussie ",items[Dmd-1])
+
 	Street("\n\033[1;91m[\033[1;93m#\033[1;91m]\033[1;97m Verifier l\'emplacement du dossier en tapant\033[1;95m cd \033[1;97mpuis \033[1;93m ls ")
-except KeyboardInterrupt: exit("[!] key interrupt: exit")
+ 
+        Street("\n\033[1;91m[\033[1;93m**\033[1;91m] \033[38;5;214mFaxel\033[1;97m un jour,\033[38;5;214mFaxel \033[1;97mtoujours       \033[1;91m[\033[1;93m**\033[1;91m]")
+
+except KeyboardInterrupt: exit("\033[1;91m[\033[1;93m*\033[1;91m] Interruption\033[1;91m] : \033[1;94m]Arret")
 except Exception as F: exit("\033[1;91m[\033[1;97mA plus\033[1;91m] %s"%(F))
+
+
