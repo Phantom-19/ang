@@ -1,22 +1,17 @@
 #!usr/bin/python3.7
 #coding=utf-8
+
+
 #Auteur: Faxel
 #Contact: t.me/Faxelh
-
-
-
 # Le credit pour ce code va a Mr Faxel
 # Si vous voulez prendre Le credit pour ce code Voyez Faster Axel.
 
 
 
-import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,cookielib,requests,mechanize,fileinput
-from multiprocessing.pool import ThreadPool
-from requests.exceptions import ConnectionError
-from mechanize import Browser
+import os,sys,time,datetime,random,hashlib,re,threading,json
+
 from time import sleep   
-from urllib2 import *
-from platform import system
 
 
 
