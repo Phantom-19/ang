@@ -77,7 +77,7 @@ if s <= 0:
 elif s > 0:
 
 	print("\033[1;91m[\033[1;93m*\033[1;91m] \033[1;97mJ\'ai trouver \033[1;91m",s," Faxel")
-        print("\033[1;97mreferentiel sur le github de\033[1;96m",Nom)
+        print("\033[1;97mreferentiel sur le github de\033[1;96m",Nom,)
         
 c=int(1)
 while c < s:
