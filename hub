@@ -81,8 +81,8 @@ while c < s:
   __ ___ ___    _     _        _ 
  /__  |   |    /  |  / \ |\ | |_ 
  \_| _|_  |    \_ |_ \_/ | \| |_ 
-                                 """)
-                print ("\t["+str(c)+"] Clone",items[i])
+                                 \033[1;91m""")
+                print ("\t["+str(c)+"]\033[1;97m Clone\033[1;92m",items[i])
                 c+=1
 try:
 	Dmd=int(input("\n\033[1;91m[\033[1;93m*\033[1;91m] \033[1;97mClonage du lien git\033[1;91m (\033[1;95mnumero\033[1;91m) :\033[1;96m "))
@@ -90,7 +90,7 @@ try:
 		exit("\033[1;91m[\033[1;93m?\033[1;91m] \033[1;97mA plus")
 	os.system('git clone https://github.com/'+u+'/'+items[Dmd-1])
 	sp.call('mv '+str(items[Dmd-1])+' ..',shell=True,stdout=sp.DEVNULL, stderr=sp.STDOUT)
-	print("\033[1;91m[\033[1;93m@\033[1;91m]\033[1;92m Installation reussie ",items[Dmd-1])
-	print("\033[1;91m[\033[1;93m#\033[1;91m]\033[1;97m Verifier installer le dossier en tapant\033[1;95m 'cd' \033[1;97mpuis \033[1;93m'ls' ")
+	Street("\n\033[1;91m[\033[1;93m@\033[1;91m]\033[1;92m Installation reussie ",items[Dmd-1])
+	Street("\n\033[1;91m[\033[1;93m#\033[1;91m]\033[1;97m Verifier l\'emplacement du dossier en tapant\033[1;95m cd \033[1;97mpuis \033[1;93m ls ")
 except KeyboardInterrupt: exit("[!] key interrupt: exit")
 except Exception as F: exit("\033[1;91m[\033[1;97mA plus\033[1;91m] %s"%(F))
