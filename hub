@@ -73,8 +73,8 @@ if s <= 0:
 	exit("\033[1;91m\033[1;97m[Depot introuvable\033[1;91m]\033[1;97m Le nom d\'utilisateur \033[1;96m ",u," \033[1;97m n\'a pas de referentiels")
 elif s > 0:
 	print("\033[1;91m[\033[1;93m*\033[1;91m] \033[1;97mJ\'ai trouver \033[1;91m",s,"\033[1;97m referentiel sur le github de\033[1;96m ",u," ")
-        print("\033[1;96m  __ ___ ___    _     _        _ ")
-        print("\033[1;96m /__  |   |    /  |  / \ |\ | |_ ")
+        Street("\033[1;96m  __ ___ ___    _     _        _ ")
+        Street("\033[1;96m /__  |   |    /  |  / \ |\ | |_ ")
         print("\033[1;96m \_| _|_  |    \_ |_ \_/ | \| |_ ")
                                  
 c=int(1)
