@@ -70,9 +70,14 @@ except TypeError: exit("\033[1;91m[\033[1;93mx\033[1;91m]\033[1;97m Le nom d\'ut
 
 s=len(items)
 if s <= 0:
-	exit("\033[1;91m[\033[1;97mDepot introuvable\033[1;91m]\033[1;97m Le nom d\'utilisateur \033[1;96m ",Nom," \033[1;97m n\'a pas de referentiels")
+	#exit("\033[1;91m]\033[1;97m  \033[1;96m ",Nom," ")
+        print("\033[1;91m[\033[1;97m Depot introuvable \033[38;5;145m ",Nom," \033[1;97mLe nom d\'utilisateur n\'a pas de referentiel")
+        exit()
+
 elif s > 0:
-	print("\033[1;91m[\033[1;93m*\033[1;91m] \033[1;97mJ\'ai trouver \033[1;91m",s,"\033[1;97m referentiel sur le github de\033[1;96m",Nom," \033[1,91m")
+
+	print("\033[1;91m[\033[1;93m*\033[1;91m] \033[1;97mJ\'ai trouver \033[1;91m",s,")
+        print("\033[1;97mreferentiel sur le github de\033[1;96m",Nom,")
         
 c=int(1)
 while c < s:
