@@ -105,9 +105,9 @@ try:
 
 	if Dmd <= 0:
 
-		exit("\033[1;91m[\033[1;93m?\033[1;91m] \033[1;97mA plus")
+		exit("\033[1;91m[\033[1;93m?\033[1;91m] \033[1;97mA plus\n")
   
-	os.system('git clone https://github.com/'+u+'/'+items[Dmd-1])
+	os.system('git clone https://github.com/'+Nom+'/'+items[Dmd-1])
 
 	sp.call('mv '+str(items[Dmd-1])+' ..',shell=True,stdout=sp.DEVNULL, stderr=sp.STDOUT)
 
