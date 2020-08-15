@@ -10,9 +10,8 @@ p align="left">
 <img alt="profile pic" width="195px" src="https://raw.githubusercontent.com/Phantom-19/bash/master/fr.jpg"/> 
 <img src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=Phantom-19&hide=ruby,perl&hide_border=true"/>
 </p> 
-<p align="center"
+<p align="center">
 <a href="https://github.com/Phantom-19"><img title="Auteur" src="https://img.shields.io/badge/Auteur-Faxel-red.svg?logo=github"></a>
-<a href="#"><img title="Open Source" src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-green?"></a>
 </p>
 <p align="center">
 <a href="#"><img title="Version" src="https://img.shields.io/badge/Version-1.5-green.svg?style=flat-square"></a>
