@@ -14,7 +14,7 @@ p align="left">
 <a href="https://github.com/Phantom-19"><img title="Auteur" src="https://img.shields.io/badge/Auteur-Faxel-red.svg?logo=github"></a>
 </p>
 <p align="center">
-<a href="#"><img title="Version" src="https://img.shields.io/badge/Version-1.5-green.svg?style=flat-square"></a>
+<a href="#"><img title="Version" src="https://img.shields.io/badge/Version-semi-green.svg?style=flat-square"></a>
 <a href="https://github.com/Phantom-19/followers"><img title="Abonnés" src="https://img.shields.io/github/followers/Phantom-19?color=blue&style=flat-square"></a>
 <a href="https://github.com/Phantom-19/link/stargazers/"><img title="Étoiles" src="https://img.shields.io/github/stars/Phantom-19/ang??color=red&style=flat-square"></a>
 <a href="https://github.com/Phantom-19/link/network/members"><img title="Fourches" src="https://img.shields.io/github/forks/Phantom-19/ang??color=red&style=flat-square"></a>
@@ -23,7 +23,7 @@ p align="left">
 <a href="#"><img title="Langage" src="https://forthebadge.com/images/badges/made-with-python.svg"></a>
 </p>
 
-## `Installation banner `:
+## `Installation ang `:
 * `apt update`
 * `apt install git curl python2 python `
 * `git clone https://github.com/Phantom-19/ang.git`
@@ -31,11 +31,11 @@ p align="left">
 * `pip2 install mechanize`
 * `pip2 install requests`
 
-## ` Execution > ` `python2 ch_ang`
+## ` Execution > ` `python2 ch_ang.py`
 
 ##  `Commande unique de cd ang`:
 ```
-apt update ; apt install git curl -y ; git clone git clone https://github.com/Phantom-19/ang.git ; cd ang ; pip2 install mechanize ;   pip2 install requests ; python2 ch_ang
+apt update ; apt install git curl -y ; git clone git clone https://github.com/Phantom-19/ang.git ; cd ang ; pip2 install mechanize ;   pip2 install requests ; python2 ch_ang.py
 ```
 
 <br>
